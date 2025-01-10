@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatorio Enfermagem</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="capture">
+    <h1>Relatorio</h1>
+    
+    <form action="" id="form">
+      <label for="data">Data:</label>
+      <input type="date" class="data">
+      <br>
+      <label for="tec">Técnico(a):</label>
+      <input type="text" class="tec"> - <input type="number" name="" class="coren">
+      <br>
+      <label for="nome">Nome:</label>
+      <input type="text">
+      
+      <label for="idade">idade:</label>
+      <input type="text" class="idade">
+      <hr>
+      <label for="alimentacao" class="alimentacao">alimentacao(🍼) <button class="btnAdd">[+]</button>
+      <br>
+      <input type="time" name="alimentacao" >
+      <br>
+      </label>
+      <label for="fralda" class="fralda">higiene(fralda)🚼<button class="btnfralda">[+]</button>
+        <br>
+        <input type="time" name="fralda" >
+        <br>
+        </label>
+      <label for="fralda" class="banho">higiene(banho)🛀<button class="btnbanho">[+]</button>
+        <br>
+        <input type="time" name="banho" >
+        <br>
+        </label>
+      <label for="descanso" class="descanso">descanso 😴 <button class="btndescanso">[+]</button>
+        <br>
+        <input type="time" name="descanso" >à
+        <input type="time" name="descanso" >
+  <br>
+        </label>
+      <br>
+      <label for="obs">
+        observações:📋
+        <br>
+        <textarea name="obs" ></textarea>
+      </label>
+     </form>
+   
+  </div>
+  <div class="boxPrint">
+    <button id="screenshotBtn">Tirar Print</button>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body{
+ 
+  background: url('bg.jpg')no-repeat center / cover;
+  
+}
+#capture{
+  border-radius: 10px;
+  padding:20px;
+  height: 100%;
+}
+input {
+  height: 1.5rem;
+  margin-bottom: 20px;
+  border: none;
+  
+}
+label{
+ 
+  text-transform: capitalize;
+  
+}
+.coren,.idade{
+width: 60px;
+
+}
+textarea{
+  width: 100%;
+  height: 150px;
+}
+.boxPrint{
+  margin: 5px;
+ 
+  text-align: center;
+}
+.boxPrint button{
+  padding: 1rem;
+  border: 1px solid  white;
+ background:  #95f5ff;
+ 
+ border-radius:2px;
+}
+.tec{
+  width:150px ;
+}
