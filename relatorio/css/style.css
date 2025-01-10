@@ -4,6 +4,7 @@ body{
   
 }
 #capture{
+background: url('bg.jpg')no-repeat center / cover;
   border-radius: 10px;
   padding:20px;
   height: 100%;
