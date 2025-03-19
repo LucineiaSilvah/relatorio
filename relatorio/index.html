@@ -15,8 +15,11 @@
       <label for="data">Data:</label>
       <input type="date" class="data">
       <br>
-      <label for="tec">Técnico(a):</label>
-      <input type="text" class="tec"> - <input type="number" name="" class="coren">
+      <div>
+       <label for="tec">Técnico(a):</label>
+      <input type="text" class="tec"> - <input type="number" name="" class="coren">   
+      </div>
+      
       <br>
       <label for="nome">Nome:</label>
       <input type="text">
@@ -41,15 +44,21 @@
         </label>
       <label for="descanso" class="descanso">descanso 😴 <button class="btndescanso">[+]</button>
         <br>
-        <input type="time" name="descanso" >à
-        <input type="time" name="descanso" >
+        <input type="time" name="descanso" class="descanso" >à
+        <input type="time" name="descanso" class="descanso">
   <br>
         </label>
       <br>
       <label for="obs">
         observações:📋
+        <button id="editar">✏️</button>
+        <div id="saidaObs">
+           
+        </div>
         <br>
-        <textarea name="obs" ></textarea>
+        
+        <textarea  name="obs" id="obs" ></textarea>
+       
       </label>
      </form>
    

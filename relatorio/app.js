@@ -51,6 +51,7 @@ btndescanso.addEventListener('click', (e)=>{
   const novoEl = document.createElement('input')
   const novo = document.createElement('input')
   const p = document.createElement('p')
+  novo.className = "descanso";
   const conteudo = document.createTextNode('à')
   const br = document.createElement('br')
   novoEl.type = 'time'
@@ -67,8 +68,22 @@ p.appendChild(conteudo)
 
 
 })
+const edit = document.getElementById("editar");
+edit.addEventListener("click",(e)=>{
+e.preventDefault()
+ obs.style.display = "block"; 
+  
+})
+function mudarParaDiv() {
+    let obs =document.querySelector("#obs");
+let saida = document.getElementById("saidaObs");
+saida.style.display="block";
+saida.innerText = obs.value;
 
+obs.style.display = "none"
+}
  document.getElementById('screenshotBtn').addEventListener('click', () => {
+mudarParaDiv();
       const element = document.getElementById('capture');
       html2canvas(element, {
         useCORS: true, // Garante que imagens de fundo externas sejam carregadas
